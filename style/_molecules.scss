@@ -1,0 +1,86 @@
+@import 'atoms';
+
+navbar{
+    font-family: $san-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 14px;
+    color: $text-black-100;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: white;
+    border-bottom: 1px solid $ui-grey-border-100;
+    display: flex;
+    padding-top:32px;
+    padding-bottom: 32px; 
+}
+@media screen and (max-width: 600px) {
+    navbar{
+        padding-top:24px;
+        padding-bottom: 24px; 
+    }
+}
+
+.navbar-items-left{
+    display: inline-block;
+    float: left;
+}
+
+.navbar-items-right{
+    display: inline-block;
+    float: right;
+    margin-top: 10px;
+}
+
+.navbar-dropdown {
+    position: relative;
+    display: inline-block;
+    padding-left: 48px;
+}
+  
+.dropdown-links {
+    list-style: none;
+    display: none;
+    position: absolute;
+    background-color: $ui-white-100;
+    min-width: 180px;
+    padding: 24px;
+    z-index: 1;
+    border: 1px solid $ui-grey-border-100;
+    margin-bottom: 0px;
+   left: 0px;
+}
+
+navbar a img{
+    height: 32px;
+}
+
+@media screen and (max-width: 1024px) {
+    navbar a img{
+        height: 24px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    navbar a img{
+        height: 20px;
+    }
+}
+
+navbar ul li {
+    padding-bottom: 24px;
+}
+
+navbar ul li:last-child{
+    padding-bottom: 0px;
+}
+  
+.navbar-dropdown:hover .dropdown-links {
+    display: block;
+}
+
+navbar ul li a:hover{
+    color: $rg-orange-100
+}
