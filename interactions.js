@@ -1,3 +1,8 @@
+// JQUERY BEGINS HERE
+
+
+
+
 document.addEventListener('DOMContentLoaded', (event) => {
     //------------   JAVASCRIPT FOR SELECT MENU ------------  
    
@@ -89,4 +94,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
     
     //------------   JAVASCRIPT FOR SELECT OVER ------------  
 })
+
+
 

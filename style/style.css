@@ -770,6 +770,19 @@ navbar {
   margin-top: 10px;
 }
 
+.navbar-transparent {
+  background-color: black !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4) !important;
+}
+
+.navbar-transparent .navbar-link {
+  color: white !important;
+}
+
+.navbar-transparent .navbar-dropdown span {
+  color: white !important;
+}
+
 .navbar-dropdown {
   position: relative;
   display: inline-block;
@@ -817,6 +830,39 @@ navbar ul li:last-child {
 
 navbar ul li a:hover {
   color: #e16261;
+}
+
+.nav-desktop {
+  display: contents;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 20px;
+  height: 2px;
+  background-color: #33353a;
+  margin: 5px 0;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 10px;
+}
+
+.hamburger-menu-items {
+  width: 100vw;
+  max-width: 420px;
+  height: 100vh;
+  position: fixed;
+  top: 0px;
+  right: -100%;
+  z-index: 4;
+  background-color: white;
+  border-left: 1px solid #ededed;
+  overflow-y: scroll;
+  transition: 0.5s;
+}
+
+.logo-image-dark-mode {
+  src: url("https://res.cloudinary.com/rgcorporate/image/upload/v1576998048/RoundGlass_Logo_Light_Background_Copy.svg");
 }
 
 /*# sourceMappingURL=style.css.map */
